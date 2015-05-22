@@ -1,5 +1,6 @@
 demo
 demo.app
+demo.dSYM
 ios-deploy
 ios-deploy.dSYM
 /.DS_Store
