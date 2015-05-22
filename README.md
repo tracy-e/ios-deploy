@@ -8,31 +8,8 @@ Install and debug iOS apps without using Xcode. Designed to work on un-jailbroke
 * You need to have a valid iOS Development certificate installed.
 * Xcode 6 or greater should be installed
 
-## Roadmap
-
-See our [milestones](https://github.com/phonegap/ios-deploy/milestones).
-
-Significant changes: 
-
-    1.8.0 will use an Xcode project instead of a Makefile (to prepare for 2.0.0)
-    2.0.0 will break out the commands into their own files, and create ios-deploy-lib for node.js use
-
 ## Installation
-=======
 
-ios-deploy installation is made simple using the node.js package manager.  If you use [Homebrew](http://brew.sh/), install [node.js](https://nodejs.org):
-
-```
-brew install node
-```
-
-Now install ios-deploy with the [node.js](https://nodejs.org) package manager:
-
-```
-npm install -g ios-deploy
-```
-
-To install from source:
 
 ```
 make install prefix=/usr/local
@@ -116,6 +93,3 @@ The included demo.app represents the minimum required to get code running on iOS
 * `make demo.app` will generate the demo.app executable. If it doesn't compile, modify IOS_SDK_VERSION in the Makefile.
 * `make debug` will install demo.app and launch a LLDB session.
 
-## Notes
-
-* With some modifications, it may be possible to use this without Xcode installed; however, you would need a copy of the relevant DeveloperDiskImage.dmg (included with Xcode). lldb would also run slower as symbols would be downloaded from the device on-the-fly.

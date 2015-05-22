@@ -32,4 +32,4 @@ debug: all
 	./ios-deploy --debug --bundle demo.app
 
 clean:
-	@rm -rf *.app demo ios-deploy
+	@rm -rf *.app demo ios-deploy *.dSYM
